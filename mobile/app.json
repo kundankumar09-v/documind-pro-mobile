@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "DocuMind",
+    "slug": "documind-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#0a0a1a",
+      "resizeMode": "contain"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.documind.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "DocuMind needs camera access to capture documents.",
+        "NSPhotoLibraryUsageDescription": "DocuMind needs photo access to upload documents."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0a0a1a"
+      },
+      "package": "com.documind.app",
+      "permissions": ["CAMERA", "READ_EXTERNAL_STORAGE"]
+    },
+    "plugins": [
+      "expo-secure-store",
+      "expo-document-picker"
+    ],
+    "extra": {
+      "apiUrl": "http://10.0.2.2:8000",
+      "eas": {
+        "projectId": "documind-mobile"
+      }
+    }
+  }
+}

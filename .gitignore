@@ -1,0 +1,92 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Build outputs
+dist/
+build/
+web-build/
+
+# Expo
+.expo/
+expo-env.d.ts
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+
+# React Native / Metro
+*.hprof
+metro-debug-*
+
+# Next.js
+.next/
+out/
+
+# React Native
+*.tgz
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.log
+
+# Testing
+coverage/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+backend/env/
+backend/.venv/
+
+# Database
+chroma_db/
+chroma.sqlite3
+*.sqlite3
+backend/users.db
+
+# Data
+backend/data/images/
+
+# IDE
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# iOS
+ios/Pods/
+ios/build/
+
+# Android
+android/app/build/
+android/.gradle/
+android/build/
+
+# Misc
+*.pem
+*.key
+*.cert
