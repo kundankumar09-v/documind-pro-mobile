@@ -174,7 +174,7 @@ async def send_otp_email(recipient_email: str, otp: str) -> bool:
 
 def _build_reset_html(token: str, recipient_email: str) -> str:
     """Return an HTML email body with the reset link."""
-    reset_link = f"http://localhost:5173/reset-password?token={token}"
+    reset_link = f"documind://reset-password?token={token}"
     return f"""
 <!DOCTYPE html>
 <html lang="en">
@@ -265,7 +265,7 @@ async def send_reset_email(recipient_email: str, token: str) -> bool:
     msg["From"] = f"DocuMind <{GMAIL_USER}>"
     msg["To"] = recipient_email
 
-    reset_link = f"http://localhost:5173/reset-password?token={token}"
+    reset_link = f"documind://reset-password?token={token}"
     plain_text = (
         f"Reset your DocuMind password by clicking this link: {reset_link}\n\n"
         f"This link expires in 15 minutes.\n"

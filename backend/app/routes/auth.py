@@ -210,7 +210,7 @@ async def forgot_password(payload: ForgotPasswordRequest, db: Session = Depends(
     if not sent:
         print(f"\n{'='*50}")
         print(f"  DocuMind PASSWORD RESET for {user.email}")
-        print(f"  Link: http://localhost:5173/reset-password?token={token}")
+        print(f"  Token: {token} (enter in app's Reset Password screen)")
         print(f"  [EMAIL NOT SENT - configure GMAIL_USER & GMAIL_APP_PASSWORD in .env]")
         print(f"{'='*50}\n")
     

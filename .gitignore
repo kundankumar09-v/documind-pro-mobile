@@ -8,11 +8,6 @@ node_modules/
 .env.*
 !.env.example
 
-# Build outputs
-dist/
-build/
-web-build/
-
 # Expo
 .expo/
 expo-env.d.ts
@@ -22,16 +17,11 @@ expo-env.d.ts
 *.key
 *.mobileprovision
 *.orig.*
+web-build/
 
 # React Native / Metro
 *.hprof
 metro-debug-*
-
-# Next.js
-.next/
-out/
-
-# React Native
 *.tgz
 
 # Debug logs
@@ -88,5 +78,4 @@ android/build/
 
 # Misc
 *.pem
-*.key
 *.cert
